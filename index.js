@@ -1,7 +1,7 @@
 
 
 const express = require("express")
-const  port = 5000
+const  port = process.env.PORT||5000
 const mongoose = require("mongoose")
 const Reguser = require("./models/usermodel")
 const useraddress = require("./models/addressmodel")
